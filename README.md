@@ -1,5 +1,8 @@
 # Apprentice-Intro-Languages
 
+## Before we start.
+
+Consider follow the clean code principles. It's not mandatory, but remember that someone else might read your code! :D
 
 ## What do i need?
 
