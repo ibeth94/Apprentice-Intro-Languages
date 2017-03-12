@@ -18,13 +18,13 @@ function ejecutarOperacion(operacion) {
     resultado = dividirDosNumeros(valor1, valor2)
   } else if(operacion == "sumarTodosDeLista") {
     var valorDeInput = document.getElementById("listaDeNumeros").value;
-    var listaDeNumerosDelUsuario = generaListaDeNumeros();
+    var listaDeNumerosDelUsuario = generaListaDeNumeros(valorDeInput);
     resultado = sumarTodosDeLista(listaDeNumerosDelUsuario);
   }
-  imprimirResultados(resultado);
+  imprimirResultado(resultado);
 }
 
-function imprimirResultados(resultado) {
+function imprimirResultado(resultado) {
   document.getElementById("resultado").innerHTML = resultado;
 }
 
@@ -50,8 +50,8 @@ function generaListaDeNumeros(cadenaDeNumeros) {
   // ["1","2","3","4","5"]
   var listaFinalDeNumeros = [];
   for(var indice = 0; indice < listaDeCadenas.length; indice++) {
-    var valorNumerico = parseFloat(listaDeCadenas[indice]);
-    listaFinalDeNumeros.push(valorNumerico);
+    var valorNumericoDeCadena = parseFloat(listaDeCadenas[indice]);
+    listaFinalDeNumeros.push(valorNumericoDeCadena);
   }
   return listaFinalDeNumeros;
 }

@@ -6,14 +6,6 @@
     <br/>
     Valor b: <input type="text" id="valor2" value=""/>
     <hr/>
-    <h1> Calculadora de listas </h1>
-    Lista de numeros: <input type="text" id="valor1" value=""/>
-    <br/>
-    Sumar todos en lista: <button id="sumarTodos" onclick="ejecutarOperacion('Sumar todos en lista')"> Sumar </button>
-    <br/>
-    <span id="resultado">
-    </span>
-    <hr/>
     <br/>
     Sumar: <button id="sumar" onclick="ejecutarOperacion('sumarDosNumeros')"> Sumar </button>
     <br/>
@@ -22,6 +14,15 @@
     Multiplicar: <button id="multiplicar" onclick="ejecutarOperacion('multiplicarDosNumeros')"> Multiplicar </button>
     <br/>
     Dividir: <button id="dividir" onclick="ejecutarOperacion('dividirDosNumeros')"> Dividir </button>
+    <hr/>
+    <h1> Calculadora de listas </h1>
+    Lista de numeros: <input type="text" id="listaDeNumeros" value=""/>
+    <br/>
+    Sumar todos en lista: <button id="sumarTodos" onclick="ejecutarOperacion('sumarTodosDeLista')"> Sumar </button>
+    <hr/>
+    <h1> Resultado </h1>
+    <span id="resultado">
+    </span>
     <script src="javascript/calculadora.js"></script>
     <br/>
     <hr/>
