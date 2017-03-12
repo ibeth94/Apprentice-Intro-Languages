@@ -14,7 +14,7 @@ function ejecutarOperacion(operacion) {
     resultado = restarDosNumeros(valor1, valor2);
   } else if(operacion == "multiplicarDosNumeros") {
     resultado = multiplicarDosNumeros(valor1, valor2);
-  } else if { // Operacion por defecto (division)
+  } else if (operacion == "dividirDosNumeros") { // Operacion por defecto (division)
     resultado = dividirDosNumeros(valor1, valor2)
   } else if(operacion == "sumarTodosDeLista") {
     var valorDeInput = document.getElementById("listaDeNumeros").value;
